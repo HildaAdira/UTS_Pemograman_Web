@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100vh;
+        }
+        table {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        .submit-button {
+            background-color: #8feb56;
+            color: #471803;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: auto; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table border="1">
+            <tr>
+                <td>
+                    <center>
+                        <h1>BIODATA DIRI</h1>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="uts_output.php" method="POST" name="input">
+                        <table>
+                            <tr>
+                                <td>NPM</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" placeholder="npm" name="npm">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nama Lengkap</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" placeholder="nama lengkap" name="nama">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="email" placeholder="email" name="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" placeholder="alamat" name="alamat">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki<br>
+                                    <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="date" name="tanggallahir">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hobi</td>
+                                <td>:</td>
+                                <td>
+                                        <input type="checkbox" name="hobi" value="basket"> Basket<br>
+                                        <input type="checkbox" name="hobi" value="futsal"> Futsal<br>
+                                        <input type="checkbox" name="hobi" value="skateboard"> Skateboard<br>
+                                        <input type="checkbox" name="hobi" value="game"> Game<br>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Asal Negara</td>
+                                <td>:</td>
+                                <td>
+                                    <select name="asalnegara">
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Amerika">Amerika</option>
+                                        <option value="Inggris">Inggris</option>
+                                        <option value="Jerman">Jerman</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>About UNAS</td>
+                                <td>:</td>
+                                <td>
+                                    <textarea name="saran" rows="5" cols="17" placeholder=""></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <input type="submit" value="Submit" class="submit-button">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
